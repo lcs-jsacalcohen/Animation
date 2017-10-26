@@ -25,15 +25,8 @@ class Sketch : NSObject {
         // Change position
         x += 1
         
-        
-        
-       
-        
         // Draw an ellipse in the middle of the canvas
-       
-          canvas.drawEllipse(centreX:   x, centreY: x, width: 50, height: 50)
-      
-        
+        canvas.drawEllipse(centreX:   x, centreY: x, width: 50, height: 50)
         
     }
     
