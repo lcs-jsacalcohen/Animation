@@ -32,6 +32,7 @@ class Sketch : NSObject {
         
         //clean up
          canvas.fillColor = Color.white
+        canvas.drawShapesWithBorders = false
         canvas.drawRectangle(bottomLeftX: 500, bottomLeftY: 500, width: 500, height: 500)
         
         
@@ -44,14 +45,19 @@ class Sketch : NSObject {
             
   
             //Draw an ellipse
-            canvas.fillColor = .black
+
             
         }
         // Draw an ellipse in the middle of the canvas
+   canvas.fillColor = Color.blue
         canvas.drawEllipse(centreX: x, centreY: 250, width: 50, height: 50)
+        canvas.fillColor = Color.green
         canvas.drawEllipse(centreX: x, centreY: 50, width: 50, height: 50)
+        canvas.fillColor = Color.purple
         canvas.drawEllipse(centreX: x, centreY: 450, width: 50, height: 50)
+        canvas.fillColor = Color.orange
         canvas.drawEllipse(centreX: 500-x, centreY: 350, width: 50, height: 50)
+        canvas.fillColor = Color.red
       canvas.drawEllipse(centreX: 500-x, centreY: 150, width: 50, height: 50)
         
     }
