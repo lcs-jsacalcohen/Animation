@@ -33,7 +33,7 @@ class Sketch : NSObject {
         //clean up
          canvas.fillColor = Color.white
         canvas.drawShapesWithBorders = false
-        canvas.drawRectangle(bottomLeftX: 500, bottomLeftY: 500, width: 500, height: 500)
+        canvas.drawRectangle(bottomLeftX: 0, bottomLeftY: 0, width: 500, height: 500)
         
         
         // Change position
@@ -42,6 +42,8 @@ class Sketch : NSObject {
         // Make it bounce at right
         if x > 500 {//start of the block
             dx = -2 //move to the left}
+            
+            
             
   
             //Draw an ellipse
