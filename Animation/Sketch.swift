@@ -15,18 +15,29 @@ class Sketch : NSObject {
         // Create canvas object – specify size
         canvas = Canvas(width: 500, height: 500)
         
-        // Set starting position
+        canvas.fillColor = Color.white
+        canvas.drawRectangle(centreX: 250, centreY: 250, width: 500, height: 500)
+        
+    // Set starting position
         x = 250
+       
     }
     
     // Runs in a loop, forever, to create the animated effect
     func draw() {
         
+       
+       
+        
         // Change position
         x += 1
         
         // Draw an ellipse in the middle of the canvas
+        canvas.drawShapesWithBorders = false
         canvas.drawEllipse(centreX:   x, centreY: x, width: 50, height: 50)
+        
+  
+        
         
     }
     
