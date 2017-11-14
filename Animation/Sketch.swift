@@ -38,6 +38,7 @@ class Sketch : NSObject {
         
         // Change position
         x += dx
+        x += -1
         
         // Make it bounce at right
         if x > 500 {//start of the block
